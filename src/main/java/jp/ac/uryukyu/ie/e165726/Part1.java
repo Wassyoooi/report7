@@ -20,7 +20,8 @@ public class Part1 {
         selection[3] = "1.管理者 2.統合する 3.促す 4.周辺機器";     //2
         selection[4] = "1.設計 2.認証 3.静止した 4.管理者";        //4
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++)
+        {
             System.out.println(word[i]);
             System.out.println(selection[i]);
             InputStreamReader is = new InputStreamReader(System.in);
