@@ -7,7 +7,7 @@ public class Main {
         PartSelection partSelection = new PartSelection();
         InputStreamReader is = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(is);
-        String partnum;     //選択パート番号
+        int partnum;     //選択パート番号
         int ansnum = 0;     //正解数
 
         System.out.println("苦しんで覚える英単語、単語の達人");
@@ -17,17 +17,10 @@ public class Main {
 
         do {
             partnum = partSelection.select();
-            do ansnum = partSelection.callPart(partnum);
-            while (partSelection.judge(ansnum) == false);
-            System.out.println("コンティニューする?");
-            System.out.println("yes:no");
-            String continuejudge = br.readLine();
-        }while(continuejudge == "yes");
-
-        System.out.println("ありがとう！また遊んでネ!");
-
-
-
-
+            do {
+                ansnum = partSelection.callPart(partnum);
+            } while (partSelection.judge(ansnum) == 1);
+        }while(partSelection.judge(ansnum) == 2);
     }
 }
+
