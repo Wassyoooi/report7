@@ -6,7 +6,7 @@ import java.io.*;
  */
 public class Part1 {
 
-    public void question1()throws IOException
+    public int question1(int ansnum)throws IOException
     {
         Answer as = new Answer();
         String[] word = {"architecture","compilation","authentication","integrate","Administrator"};
@@ -28,7 +28,9 @@ public class Part1 {
             BufferedReader br = new BufferedReader(is);
             String ans = br.readLine();
             System.out.println("あなたの答えは" + ans + "ですね。");
-            as.answer(i, ans);
+            ansnum = as.answer(i, ans, ansnum);
         }
+        return ansnum;
+
     }
 }
