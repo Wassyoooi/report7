@@ -24,13 +24,13 @@ public class PartSelectionClass {
         if (part == 1) {
             Part1 part1 = new Part1();
             ansnum = part1.question1(ansnum);
-            //System.out.println("正解数は10問中%d問です。", ansnum);
+            System.out.println("正解数は5問中" + ansnum + "問です。");
         } else if (part == 2) {
             //ansnum = Part2Class. "メソッド"
-            //System.out.println("正解数は10問中%d問です。", ansnum);
+            //System.out.println("正解数は5問中%d問です。", ansnum);
         } else if (part == 3) {
             //ansnum = Part3Class. "メソッド"
-            //System.out.println("正解数は10問中%d問です。", ansnum);
+            //System.out.println("正解数は5問中%d問です。", ansnum);
         } else {
             System.out.println("また遊んでネ!");
             ansnum = 256;
@@ -41,6 +41,7 @@ public class PartSelectionClass {
     public int judge(int ansnum) { //全問正解かどうか判断
         int allcorrect;
         if (ansnum < 5) {
+            System.out.println("全問正解じゃないドン!");
             System.out.println("もう一回遊べるドン!");
             allcorrect = 1;
         }else if(ansnum == 5){
