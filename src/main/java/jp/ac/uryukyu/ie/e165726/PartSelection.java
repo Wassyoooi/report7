@@ -14,6 +14,7 @@ public class PartSelection {
             String part = br.readLine();    //パート番号入力
             int p = Integer.parseInt(part);
             if(p>0 && p<=3) System.out.println("さあ、はじまるドン!!");
+            System.out.println();
             return p;
         }catch (NumberFormatException e){ //数値以外のキーが入力された場合
             int p = 256;
@@ -26,14 +27,17 @@ public class PartSelection {
         if (part == 1) {            //パート1を選択
             Part1 part1 = new Part1();
             ansNum = part1.question1(ansNum);
+            System.out.println();
             System.out.println("正解数は5問中" + ansNum + "問です。");
         } else if (part == 2) {     //パート2を選択
             Part2 part2= new Part2();
             ansNum = part2.question2(ansNum);
+            System.out.println();
             System.out.println("正解数は5問中"+ansNum+"問です。");
         } else if (part == 3) {     //パート3を選択
             Part3 part3= new Part3();
             ansNum = part3.question3(ansNum);
+            System.out.println();
             System.out.println("正解数は5問中"+ansNum+"問です。");
         } else {                    //問題をやめる
             System.out.println("また遊んでネ!");
@@ -51,6 +55,7 @@ public class PartSelection {
         }else if(ansNum == 5){  //全問正解
             if(AlreadyOutput == false){
                 System.out.println("全問正解!!おめでとう!!");
+                System.out.println();
             }
             correctJudge = 2;
         }else{                  //問題をやめる

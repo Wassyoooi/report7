@@ -5,38 +5,38 @@ public class Answer1 {
         int q = Integer.parseInt(ans); // String型をint型に変換し、変数qに入れる。
         if (i == 0){ //問題1
             if(q == 3) {
-                System.out.println("正解！！");
+                System.out.println("正解！！"); System.out.println();
                 ansnum += 1;
             }else{
-                System.out.println("残念。正解は3です。");
+                System.out.println("残念。正解は3です。"); System.out.println();
             }
         }else if(i == 1){ //問題2
             if(q == 1){
-                System.out.println("正解！！");
+                System.out.println("正解！！"); System.out.println();
                 ansnum += 1;
             }else{
-                System.out.println("残念。正解は1です。");
+                System.out.println("残念。正解は1です。"); System.out.println();
             }
         }else if(i == 2){ //問題3
             if(q == 2){
-                System.out.println("正解！！");
+                System.out.println("正解！！"); System.out.println();
                 ansnum += 1;
             }else{
-                System.out.println("残念。正解は2です。");
+                System.out.println("残念。正解は2です。"); System.out.println();
             }
         }else if(i == 3){ //問題4
             if(q == 2){
-                System.out.println("正解！！");
+                System.out.println("正解！！"); System.out.println();
                 ansnum += 1;
             }else{
-                System.out.println("残念。正解は2です。");
+                System.out.println("残念。正解は2です。"); System.out.println();
             }
         }else{ //問題5
             if(q == 4){
-                System.out.println("正解！！");
+                System.out.println("正解！！"); System.out.println();
                 ansnum += 1;
             }else{
-                System.out.println("残念。正解は4です。");
+                System.out.println("残念。正解は4です。"); System.out.println();
             }
         }
         return ansnum;
