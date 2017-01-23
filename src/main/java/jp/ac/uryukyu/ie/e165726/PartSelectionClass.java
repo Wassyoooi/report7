@@ -18,8 +18,7 @@ public class PartSelectionClass {
         return p;
     }
 
-    public int callPart(int part) throws IOException
-    {   //選択したパートを呼び出す
+    public int callPart(int part) throws IOException {   //選択したパートを呼び出す
         int ansnum = 0;
         if (part == 1) {
             Part1 part1 = new Part1();
@@ -38,19 +37,21 @@ public class PartSelectionClass {
         return ansnum;
     }
 
-    public int judge(int ansnum) { //全問正解かどうか判断
-        int allcorrect;
+    public int judge(int ansnum,boolean AlreadyOutput) { //全問正解かどうか判断
+        int AllCorrect;
         if (ansnum < 5) {
             System.out.println("全問正解じゃないドン!");
             System.out.println("もう一回遊べるドン!");
-            allcorrect = 1;
+            AllCorrect = 1;
         }else if(ansnum == 5){
-            System.out.println("全問正解!!おめでとう!!");
-            allcorrect = 2;
+            if(AlreadyOutput == false){
+                System.out.println("全問正解!!おめでとう!!");
+            }
+            AllCorrect = 2;
         }else{
-            allcorrect = 3;
+            AllCorrect = 3;
         }
-        return allcorrect;
+        return AllCorrect;
     }
 
 }

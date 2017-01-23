@@ -9,6 +9,7 @@ public class Main {
         BufferedReader br = new BufferedReader(is);
         int partnum;     //選択パート番号
         int ansnum = 0;     //正解数
+        boolean AlreadyOutput = true; //全問正解メッセージを出力したか判定
 
         System.out.println("苦しんで覚える英単語、単語の達人");
         System.out.println();
@@ -19,7 +20,9 @@ public class Main {
             partnum = partSelection.select();
             do {
                 ansnum = partSelection.callPart(partnum);
-            } while (partSelection.judge(ansnum) == 1);
-        }while(partSelection.judge(ansnum) == 2);
+                if(ansnum == 5) AlreadyOutput = false;
+            } while (partSelection.judge(ansnum,AlreadyOutput) == 1);
+            AlreadyOutput = true;
+        }while(partSelection.judge(ansnum,AlreadyOutput) == 2);
     }
 }
