@@ -30,12 +30,13 @@ public class PartSelection {
             ansNum = part1.question1(ansNum);
             System.out.println("正解数は5問中" + ansNum + "問です。");
         } else if (part == 2) {     //パート2を選択
-            //ansNum = Part2. "メソッド"
-            //System.out.println("正解数は5問中%d問です。", ansnum);
+            Part2 part2= new Part2();
+            ansNum = part2.question2(ansNum);
+            System.out.println("正解数は5問中"+ansNum+"問です。");
         } else if (part == 3) {     //パート3を選択
             Part3 part3= new Part3();
-            ansnum = part3.question3(ansnum);
-            System.out.println("正解数は5問中"+ansnum+"問です。");
+            ansNum = part3.question3(ansNum);
+            System.out.println("正解数は5問中"+ansNum+"問です。");
         } else {                    //問題をやめる
             System.out.println("また遊んでネ!");
             ansNum = 256;
