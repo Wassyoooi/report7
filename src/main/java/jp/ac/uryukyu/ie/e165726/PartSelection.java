@@ -5,8 +5,6 @@ import java.io.*;
 public class PartSelection {
     public int select() throws IOException {    //ユーザーにpartを入力させる
         try{
-            //Part2Class part2 = new Part2Class();
-            //Part3Class part3 = new Part3Class();
             System.out.println("パートを選ぶドン!");
             System.out.println("part1,part2,part3,おわる");
             System.out.println();
