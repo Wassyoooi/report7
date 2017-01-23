@@ -5,11 +5,9 @@ import java.io.*;
 public class Main {
     public static void main(String[] args)throws IOException{
         PartSelection partSelection = new PartSelection();
-        InputStreamReader is = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(is);
-        int partnum;     //選択パート番号
-        int ansnum = 0;     //正解数
-        boolean AlreadyOutput = true; //全問正解メッセージを出力したか判定
+        int partNum;     //選択パート番号
+        int ansNum;     //正解数
+        boolean isAlreadyOutput = true; //全問正解メッセージを出力したか判定
 
         System.out.println("苦しんで覚える英単語、単語の達人");
         System.out.println();
@@ -17,12 +15,12 @@ public class Main {
         System.out.println();
 
         do {
-            partnum = partSelection.select();
+            partNum = partSelection.select();
             do {
-                ansnum = partSelection.callPart(partnum);
-                if(ansnum == 5) AlreadyOutput = false;
-            } while (partSelection.judge(ansnum,AlreadyOutput) == 1);
-            AlreadyOutput = true;
-        }while(partSelection.judge(ansnum,AlreadyOutput) == 2);
+                ansNum = partSelection.callPart(partNum);
+                if(ansNum == 5) isAlreadyOutput = false;
+            } while (partSelection.judge(ansNum,isAlreadyOutput) == 1);
+            isAlreadyOutput = true;
+        }while(partSelection.judge(ansNum,isAlreadyOutput) == 2);
     }
 }
