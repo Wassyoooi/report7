@@ -35,7 +35,7 @@ public class Answer3 {
                 System.out.println("残念。正解は2です。");
             }
         }else{
-            if(q == 13){
+            if(q == 1){
                 System.out.println("正解！！");
                 ansnum += 1;
             }else{
