@@ -1,9 +1,7 @@
 package jp.ac.uryukyu.ie.e165726;
 
 import java.io.*;
-/**
- * Created by e165719 on 2017/01/17.
- */
+
 public class Part1 {
 
     public int question1(int ansnum)throws IOException
