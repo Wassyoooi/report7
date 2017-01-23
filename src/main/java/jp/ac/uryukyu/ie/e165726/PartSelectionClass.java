@@ -5,8 +5,6 @@ import java.io.*;
 public class PartSelectionClass {
     public int select() throws IOException {//ユーザーにpartを入力させる
         try{
-            //Part2Class part2 = new Part2Class();
-            //Part3Class part3 = new Part3Class();
             System.out.println("パートを選ぶドン!");
             System.out.println("part1,part2,part3,おわる");
             System.out.println();
@@ -30,11 +28,13 @@ public class PartSelectionClass {
             ansnum = part1.question1(ansnum);
             System.out.println("正解数は5問中" + ansnum + "問です。");
         } else if (part == 2) {     //パート2を選択
-            //ansnum = Part2Class. "メソッド"
-            //System.out.println("正解数は5問中%d問です。", ansnum);
+            Part2 part2 = new Part2();
+            ansnum = part2.question2(ansnum);
+            System.out.println("正解数は5問中"+ansnum+"問です。");
         } else if (part == 3) {     //パート3を選択
-            //ansnum = Part3Class. "メソッド"
-            //System.out.println("正解数は5問中%d問です。", ansnum);
+            Part3 part3= new Part3();
+            ansnum = part3.question3(ansnum);
+            System.out.println("正解数は5問中"+ansnum+"問です。");
         } else {                    //問題をやめる
             System.out.println("また遊んでネ!");
             ansnum = 256;
