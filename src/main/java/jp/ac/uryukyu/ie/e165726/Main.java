@@ -23,4 +23,3 @@ public class Main {
         }while(partSelection.judge(ansnum) == 2);
     }
 }
-
