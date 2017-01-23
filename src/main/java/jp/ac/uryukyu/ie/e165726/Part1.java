@@ -6,7 +6,7 @@ public class Part1 {
 
     public int question1(int ansnum)throws IOException
     {
-        Answer as = new Answer();
+        Answer1 as1 = new Answer1();
         String[] word = {"architecture","compilation","authentication","integrate","Administrator"};
 
         String[] selection;
@@ -26,7 +26,7 @@ public class Part1 {
             BufferedReader br = new BufferedReader(is);
             String ans = br.readLine();
             System.out.println("あなたの答えは" + ans + "ですね。");
-            ansnum = as.answer(i, ans, ansnum);
+            ansnum = as1.answer1(i, ans, ansnum);
         }
         return ansnum;
 
