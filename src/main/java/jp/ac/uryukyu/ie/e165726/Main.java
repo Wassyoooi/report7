@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args)throws IOException{
-        PartSelectionClass partSelection = new PartSelectionClass();
+        PartSelection partSelection = new PartSelection();
         InputStreamReader is = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(is);
         int partnum;     //選択パート番号
