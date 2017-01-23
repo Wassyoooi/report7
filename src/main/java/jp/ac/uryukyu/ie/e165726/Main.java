@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args)throws IOException{
         PartSelection partSelection = new PartSelection();
         int partNum;     //選択パート番号
-        int ansNum;     //正解数
+        int ansNum;      //正解数
         boolean isAlreadyOutput = true; //全問正解メッセージを出力したか判定
 
         System.out.println("苦しんで覚える英単語、単語の達人");
@@ -15,12 +15,12 @@ public class Main {
         System.out.println();
 
         do {
-            partNum = partSelection.select();
+            partNum = partSelection.select();   //パート選択
             do {
-                ansNum = partSelection.callPart(partNum);
-                if(ansNum == 5) isAlreadyOutput = false;
-            } while (partSelection.judge(ansNum,isAlreadyOutput) == 1);
-            isAlreadyOutput = true;
-        }while(partSelection.judge(ansNum,isAlreadyOutput) == 2);
+                ansNum = partSelection.callPart(partNum);   //パート実行し、正解数を求める
+                if(ansNum == 5) isAlreadyOutput = false;    //全問正解メッセージを出力させるようにする
+            } while (partSelection.judge(ansNum,isAlreadyOutput) == 1);     //全問正解じゃなければ最初の単語からやり直し
+            isAlreadyOutput = true;                         //全問正解メッセージを出力させないようにする
+        }while(partSelection.judge(ansNum,isAlreadyOutput) == 2);   //コンテニューするか確認
     }
 }
