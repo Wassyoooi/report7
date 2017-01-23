@@ -15,7 +15,7 @@ public class PartSelectionClass {
             System.out.println("part1を選ぶなら「1」、part2を選ぶなら「2」、part3を選ぶなら「3」を入力してください。おわる時はそれ以外のキーを入力してください。");
             String part = br.readLine();
             int p = Integer.parseInt(part);
-            if(p<0 && p<=3) System.out.println("さあ、はじまるドン!!");
+            if(0<p && p<=3) System.out.println("さあ、はじまるドン!!");
             return p;
         }catch (NumberFormatException e){ //数値以外のキーが入力された場合
             int p = 256;

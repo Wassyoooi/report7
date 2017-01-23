@@ -5,8 +5,6 @@ import java.io.*;
 public class Main {
     public static void main(String[] args)throws IOException{
         PartSelectionClass partSelection = new PartSelectionClass();
-        InputStreamReader is = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(is);
         int partnum;     //選択パート番号
         int ansnum = 0;     //正解数
         boolean AlreadyOutput = true; //全問正解メッセージを出力したか判定
