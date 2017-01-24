@@ -3,7 +3,7 @@ package jp.ac.uryukyu.ie.e165726;
 
 import java.io.*;
 public class Part2 {
-    public int question2(int ansnum)throws IOException
+    public int question2(int ansNum)throws IOException
     {
         Answer2 as2 = new Answer2();
         String[] word = {"executable","quote","insert","static","bug"};
@@ -25,9 +25,9 @@ public class Part2 {
             BufferedReader br = new BufferedReader(is);
             String ans = br.readLine();
             System.out.println("あなたの答えは" + ans + "ですね。");
-            ansnum = as2.answer2(i, ans, ansnum);
+            ansNum = as2.answer2(i, ans, ansNum);
         }
-        return ansnum;
+        return ansNum;
 
     }
 }

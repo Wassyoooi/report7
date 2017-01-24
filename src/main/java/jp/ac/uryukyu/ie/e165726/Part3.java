@@ -2,7 +2,8 @@ package jp.ac.uryukyu.ie.e165726;
 
 import java.io.*;
 public class Part3 {
-    public int question3(int ansnum)throws IOException
+
+    public int question3(int ansNum)throws IOException
     {
         Answer3 as3 = new Answer3();
         String[] word = {"drawback","encryption","abstraction","decision","identififer"};
@@ -24,9 +25,9 @@ public class Part3 {
             BufferedReader br = new BufferedReader(is);
             String ans = br.readLine();
             System.out.println("あなたの答えは" + ans + "ですね。");
-            ansnum = as3.answer3(i, ans, ansnum);
+            ansNum = as3.answer3(i, ans, ansNum);
         }
-        return ansnum;
+        return ansNum;
 
     }
 }
