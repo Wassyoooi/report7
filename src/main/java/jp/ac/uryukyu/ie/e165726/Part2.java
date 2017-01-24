@@ -28,6 +28,5 @@ public class Part2 {
             ansNum = as2.answer2(i, ans, ansNum);
         }
         return ansNum;
-
     }
 }
