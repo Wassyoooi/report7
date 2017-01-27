@@ -5,7 +5,7 @@ public class Part3 {
     public int question3(int ansNum)throws IOException
     {
         Answer3 as3 = new Answer3();
-        String[] word = {"drawback","encryption","abstraction","decision","identififer"};  //String型で配列wordに5個の単語を用意
+        String[] word = {"drawback","encryption","abstraction","decision","identifier"};  //String型で配列wordに5個の単語を用意
 
         String[] selection;  //String型で選択肢の配列を用意
         selection = new String[5];  //選択肢のインスタンスを5個用意
