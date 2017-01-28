@@ -53,6 +53,7 @@ public class Answer3 {
 
     public void correct(){ //答えが当たっていたら正解！！と出力する
         System.out.println("正解！！");
+        System.out.println();
     }
 
     public void mistake(int CollectAnswer){ //答えが間違えていたら正解番号を出力する
