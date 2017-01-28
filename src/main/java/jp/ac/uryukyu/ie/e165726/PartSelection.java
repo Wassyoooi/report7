@@ -47,14 +47,14 @@ public class PartSelection {
         return ansNum;
     }
 
-    public int judge(int ansNum,boolean AlreadyOutput) { //全問正解かどうか判断
+    public int judge(int ansNum,boolean isAlreadyOutput) { //全問正解かどうか判断
         int correctJudge;       //全問正解ではないのなら1,全問正解なら2,問題をやめる場合3が代入される
         if (ansNum < 5) {       //全問正解ではない
             System.out.println("全問正解じゃないドン!");
             System.out.println("もう一回遊べるドン!");
             correctJudge = 1;
         }else if(ansNum == 5){  //全問正解
-            if(AlreadyOutput == false){
+            if(isAlreadyOutput == false){
                 System.out.println("全問正解!!おめでとう!!");
                 System.out.println();
             }
