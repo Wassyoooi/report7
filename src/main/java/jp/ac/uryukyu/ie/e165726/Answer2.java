@@ -1,73 +1,71 @@
 package jp.ac.uryukyu.ie.e165726;
 
-/**
- * Created by e165744 on 2017/01/23.
- */
 public class Answer2 {
 
     private int ansNum = 0;
 
-    public int answer2(int i, String ans){
-        int q = Integer.parseInt(ans);
-        int CollectAnswer;
-        if (i == 0){
-            if(q == 3) {
+    public int answer2(int i, String ans) { // 選んだ答えが当たっているか答え合わせするメソッド。
+        int q = Integer.parseInt(ans); // String型をint型に変換し、変数qに入れる。
+        int CollectAnswer; //答えを入れる変数を用意。
+        if (i == 0) { //問題1
+            if (q == 3) {
                 correct();
                 setAnsNum();
-            }else{
+            } else {
                 CollectAnswer = 3;
                 mistake(CollectAnswer);
             }
-        }else if(i == 1){
-            if(q == 1){
+        } else if (i == 1) { //問題2
+            if (q == 1) {
                 correct();
                 setAnsNum();
-            }else{
+            } else {
                 CollectAnswer = 1;
                 mistake(CollectAnswer);
             }
-        }else if(i == 2){
-            if(q == 2){
+        } else if (i == 2) { //問題3
+            if (q == 2) {
                 correct();
                 setAnsNum();
-            }else{
+            } else {
                 CollectAnswer = 2;
                 mistake(CollectAnswer);
             }
-        }else if(i == 3){
-            if(q == 3){
+        } else if (i == 3) { //問題4
+            if (q == 3) {
                 correct();
                 setAnsNum();
-            }else{
-                CollectAnswer = 3;
+            } else {
+                CollectAnswer = 2;
                 mistake(CollectAnswer);
             }
-        }else{
-            if(q == 3){
+        } else { //問題5
+            if (q == 3) {
                 correct();
                 setAnsNum();
-            }else{
-                CollectAnswer = 3;
+            } else {
+                CollectAnswer = 4;
                 mistake(CollectAnswer);
             }
         }
         return getAnsNum();
     }
 
-    public void correct(){ //答えが当たっていたら正解！！と出力する
+    public void correct() { //答えが当たっていたら正解！！と出力する
         System.out.println("正解！！");
         System.out.println();
     }
 
-    public void mistake(int CollectAnswer){ //答えが間違えていたら正解番号を出力する
+    public void mistake(int CollectAnswer) { //答えが間違えていたら正解番号を出力する
         System.out.println("残念。正解は" + CollectAnswer + "です。");
     }
 
-    public void setAnsNum(){
+    public int getAnsNum() {
+        return this.ansNum;
+    }
+
+    public void setAnsNum() {
         this.ansNum += 1;
     }
 
-    public int getAnsNum(){
-        return this.ansNum;
-    }
 }
