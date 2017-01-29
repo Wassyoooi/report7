@@ -3,6 +3,8 @@ package jp.ac.uryukyu.ie.e165726;
 import java.io.*;
 
 public class Main {  //165726H 兼島光平担当
+
+public class Main {
     public static void main(String[] args)throws IOException{
         PartSelection partSelection = new PartSelection();
         int partNum;     //選択パート番号

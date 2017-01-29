@@ -67,5 +67,5 @@ public class Answer1 {
     public void setAnsNum(){
         this.ansNum += 1;
     }
-
+    
 }

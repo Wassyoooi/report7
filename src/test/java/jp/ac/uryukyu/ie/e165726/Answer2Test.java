@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
  */
 public class Answer2Test {//Answer2クラスのテストコード(金城歩夢担当)
     @Test
-    public void answer2() throws Exception { //answer2メソッドのテストコード
+    public void answer2() throws Exception { //answer2()メソッドのテストコード
         Answer2 as2 = new Answer2(); //Answer2クラスのインスタンスの呼び出し
         int ansNum = 0; //正解数を0に設定
         int i = 0; //問題番号を0に設定

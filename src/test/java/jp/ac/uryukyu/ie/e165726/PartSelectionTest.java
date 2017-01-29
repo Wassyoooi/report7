@@ -4,12 +4,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by e165726 on 2017/01/28.
- */
-public class PartSelectionTest { //PartSelectionクラスのテストコード　165726H 兼島光平担当
+//作成者 e165726 兼島光平
+
+public class PartSelectionTest { //PartSelectionクラスのテストコード
     @Test
-    public void judge() throws Exception { //judgeメソッドのテストコード
+    public void judge() throws Exception { //judge()メソッドのテストコード
         System.out.println("@Test judge call");
         PartSelection partSelection = new PartSelection(); //PartSelectionクラスのインスタンス生成
 
