@@ -4,9 +4,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by e165726 on 2017/01/28.
- */
+//作成者 e165726 兼島光平
+
 public class PartSelectionTest { //PartSelectionクラスのテストコード
     @Test
     public void judge() throws Exception { //judge()メソッドのテストコード
