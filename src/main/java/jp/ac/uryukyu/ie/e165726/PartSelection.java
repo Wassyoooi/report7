@@ -2,9 +2,7 @@ package jp.ac.uryukyu.ie.e165726;
 
 import java.io.*;
 
-//作成者　e165726 兼島光平
-
-public class PartSelection {
+public class PartSelection { //165726H 兼島光平担当
 
     public int select() throws IOException { //ユーザーにpartを入力させる
         try{

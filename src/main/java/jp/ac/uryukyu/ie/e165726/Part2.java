@@ -1,7 +1,7 @@
 package jp.ac.uryukyu.ie.e165726;
 
 import java.io.*;
-public class Part2 {
+public class Part2 { //165744F 金城歩夢担当
 
     public int question2(int ansNum)throws IOException {
 

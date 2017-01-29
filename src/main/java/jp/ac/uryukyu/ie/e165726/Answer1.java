@@ -1,6 +1,6 @@
 package jp.ac.uryukyu.ie.e165726;
 
-public class Answer1 {
+public class Answer1 {//165719E 伊波卓浩担当
 
     private int ansNum = 0;
 
