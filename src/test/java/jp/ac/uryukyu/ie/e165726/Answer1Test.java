@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by e165726 on 2017/01/28.
  */
-public class Answer1Test { //Answer1クラスのテストコード
+public class Answer1Test { //Answer1クラスのテストコード  165719E 伊波卓浩担当
     @Test
     public void answer1() throws Exception { //answer1メソッドのテストコード
         Answer1 as1 = new Answer1(); //Answer1クラスのインスタンスの呼び出し

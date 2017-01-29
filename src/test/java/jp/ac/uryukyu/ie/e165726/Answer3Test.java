@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by e165726 on 2017/01/28.
  */
-public class Answer3Test { //Answer3クラスのテストコード
+public class Answer3Test { //Answer3クラスのテストコード(金城歩夢担当)
     @Test
     public void answer1() throws Exception { //answer3メソッドのテストコード
         Answer3 as3 = new Answer3(); //Answer1クラスのインスタンスの呼び出し

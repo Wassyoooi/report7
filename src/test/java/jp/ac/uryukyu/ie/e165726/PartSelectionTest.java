@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by e165726 on 2017/01/28.
  */
-public class PartSelectionTest { //PartSelectionクラスのテストコード
+public class PartSelectionTest { //PartSelectionクラスのテストコード　165726H 兼島光平担当
     @Test
     public void judge() throws Exception { //judgeメソッドのテストコード
         System.out.println("@Test judge call");
