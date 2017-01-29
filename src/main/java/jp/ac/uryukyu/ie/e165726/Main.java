@@ -2,6 +2,8 @@ package jp.ac.uryukyu.ie.e165726;
 
 import java.io.*;
 
+//作成者　e165726 兼島光平
+
 public class Main {
     public static void main(String[] args)throws IOException{
         PartSelection partSelection = new PartSelection();
