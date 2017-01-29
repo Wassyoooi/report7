@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
  */
 public class Answer1Test { //Answer1クラスのテストコード
     @Test
-    public void answer1() throws Exception { //answer1メソッドのテストコード
+    public void answer1() throws Exception { //answer1()メソッドのテストコード
         Answer1 as1 = new Answer1(); //Answer1クラスのインスタンスの呼び出し
         int ansNum = 0; //正解数を0に設定
         int i = 0; //問題番号を0に設定

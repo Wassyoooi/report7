@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
  */
 public class PartSelectionTest { //PartSelectionクラスのテストコード
     @Test
-    public void judge() throws Exception { //judgeメソッドのテストコード
+    public void judge() throws Exception { //judge()メソッドのテストコード
         System.out.println("@Test judge call");
         PartSelection partSelection = new PartSelection(); //PartSelectionクラスのインスタンス生成
 
