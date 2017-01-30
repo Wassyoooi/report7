@@ -52,6 +52,7 @@ public class PartSelection { //165726H 兼島光平担当
         if (ansNum < 5) {       //全問正解ではない
             System.out.println("全問正解じゃないドン!");
             System.out.println("もう一回遊べるドン!");
+            System.out.println();
             correctJudge = 1;
         }else if(ansNum == 5){  //全問正解
             if(isAlreadyOutput == false){
