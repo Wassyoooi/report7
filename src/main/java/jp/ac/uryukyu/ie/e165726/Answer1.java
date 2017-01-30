@@ -58,6 +58,7 @@ public class Answer1 {//165719E 伊波卓浩担当
 
     public void mistake(int CollectAnswer){ //答えが間違えていたら正解番号を出力する
         System.out.println("残念。正解は" + CollectAnswer + "です。");
+        System.out.println();
     }
 
     public int getAnsNum(){

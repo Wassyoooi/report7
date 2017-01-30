@@ -58,6 +58,7 @@ public class Answer3 {//165744F 金城歩夢担当
 
     public void mistake(int CollectAnswer) { //答えが間違えていたら正解番号を出力する
         System.out.println("残念。正解は" + CollectAnswer + "です。");
+        System.out.println();
     }
 
     public int getAnsNum() {
